@@ -11,11 +11,14 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  arr.map(num => {
-    return isNaN(+num);
-  }).reduce((acc, cur) => {
-    return acc + cur;
-  })
+  let total = 0;
+  for(let i=0;i<arr.length;i++) {
+   if(isNaN(input[i])){
+   continue;
+    }
+     total += Number(arr[i]);
+    }
+return total;
 };
 
 export default sumElements;
