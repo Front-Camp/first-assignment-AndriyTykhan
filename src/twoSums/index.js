@@ -9,7 +9,9 @@
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
 const twoSums = (arr, base) => {
-  /* your logic here...*/
+  arr.map((acc, cur) => {
+    return acc[cur] + acc[cur + 1] == base
+  })
 };
 
 export default twoSums;
